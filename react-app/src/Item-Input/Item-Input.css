@@ -1,32 +1,44 @@
-.ItemInput {    
-    height: 15em;
-    line-height: 5em;
+.ItemInput {   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;       
+    height: auto;
+    width: 50em;    
     border: .25em solid #fff;
-    margin: 2em 8em;
-    box-shadow: 0 .25em .5em #ccc;
-    padding: 1.5em;
-    overflow: auto;
+    margin: 5em auto 3em auto;
+    box-shadow: 0 .25em .5em #ccc;    
     font-family: 'Bookman Old Style'
 }
 
+.label {
+    flex: 0 1 100%;    
+    font-size: 18px;    
+    margin: 2em auto;
+}
+
 .input {
-    display: block;
+    flex: 0 1 100%;    
     border: .15em solid #a9a9a9;
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
+    margin: 3em 5em 3em 5em;
     width: 15em;
     height: 2em;
     font-size: 18px;    
 }
 
+.input:focus {    
+    border: .15em solid blue;
+}
+
 .button {   
+    order: 2;
+    /* display: block; */
     border: .15em solid darkgreen;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: auto;
+    margin-left: 1em;
     width: 7em;
-    height: 2em;
+    height: 3em;
     font-size: 15px;    
     color: #fff;
     background-color: darkgreen;    
@@ -58,6 +70,7 @@
 }
 
 .button:hover {   
+    border: .15em solid #000;
     color: #000;
     background-color: lightgreen;   
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
