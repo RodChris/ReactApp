@@ -5,13 +5,16 @@ import './Item.css'
 const item = () => {
     return (
         <div className='Item'> 
-            <div className='row'>
+            {/* <div className='row'> */}
                 <input className='itemInput'
                     type='text'
                     disabled='disabled'></input>
-                <button className='editButton'><b>Edit Item</b></button>
-                <button className='deleteButton'><b>Delete Item</b></button>
-            </div>
+                <div className='buttonContainer'>
+                    <button className='editButton'><b>Edit Item</b></button>
+                    <button className='deleteButton'><b>Delete Item</b></button>
+                </div>
+                
+            {/* </div> */}
         </div>
     )
 }
